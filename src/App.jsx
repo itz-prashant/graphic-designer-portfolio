@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Components/Header'
 import Home from './Components/Home'
 import { AppContext } from './Components/ContextApi'
+import About from './Components/About'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <AppContext>
         <Header />
         <Home />
+        <About />
       </AppContext>
     </div>
   )

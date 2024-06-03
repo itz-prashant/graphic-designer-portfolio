@@ -13,10 +13,10 @@ const Home = () => {
                 <span className='cursor-pointer hover:text-zinc-500'>Contact Info</span>
         </div>}
         <img src={peep9} alt="" />
-        <div className='flex flex-col items-center -mt-[00]'>
-            <h1 className='sm:text-3xl text-xl'>Hello I'm ,</h1>
-            <h1 className='sm:text-5xl text-3xl font-medium'>Riya Sharma</h1>
-            <p className='text-lg'>I'm an illustrator and graphic designer.</p>
+        <div className='flex flex-col items-center -mt-9'>
+            <h1 className='sm:text-3xl text-xl text-zinc-500'>Hello I'm ,</h1>
+            <h1 className='sm:text-5xl text-3xl text-zinc-700 font-medium'>Riya Sharma</h1>
+            <p className='text-lg font-semibold text-zinc-500'>I'm an illustrator and graphic designer.</p>
         </div>
     </div>
   )
