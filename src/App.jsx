@@ -4,6 +4,7 @@ import Home from './Components/Home'
 import { AppContext } from './Components/ContextApi'
 import About from './Components/About'
 import BrandingAndvisualIdentity from './Components/Branding&visualIdentity'
+import MArketingAnddvertisement from './Components/MArketing&Advertisement'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Home />
         <About />
         <BrandingAndvisualIdentity />
+        <MArketingAnddvertisement />
       </AppContext>
     </div>
   )
