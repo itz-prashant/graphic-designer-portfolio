@@ -11,7 +11,13 @@ import flyer3 from '../assets/Market & Advertiosement/flyer3.png'
 import flyer4 from '../assets/Market & Advertiosement/flyer4.png'
 import banner1 from '../assets/Market & Advertiosement/banner1.png'
 import banner2 from '../assets/Market & Advertiosement/banner2.png'
-import banner3 from '../assets/Market & Advertiosement/banner3.png'
+import banner3 from '../assets/Market & Advertiosement/banner3.png';
+
+import label1 from '../assets/labeling & packing/label1.png'
+import packing1 from '../assets/labeling & packing/packing1.png'
+import packing2 from '../assets/labeling & packing/packing2.png'
+import packing3 from '../assets/labeling & packing/packing3.png'
+
 
 export const brandingAndVisualityData = [
     {img: bc1, name: "Budiness card"},
@@ -31,4 +37,11 @@ export const marketingAndAdvertisement = [
     {img: banner1, name: "Banner"},
     {img: banner2, name: "Banner"},
     {img: banner3, name: "Banner"},
+]
+
+export const labelingAndPackaging = [
+    {img: packing2, name: "Packaging"},
+    {img: packing3, name: "Packaging"},
+    {img: packing1, name: "Packaging"},
+    {img: label1, name: "Label"},
 ]

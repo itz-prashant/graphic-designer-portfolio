@@ -5,6 +5,7 @@ import { AppContext } from './Components/ContextApi'
 import About from './Components/About'
 import BrandingAndvisualIdentity from './Components/Branding&visualIdentity'
 import MArketingAnddvertisement from './Components/MArketing&Advertisement'
+import LabelingAndPackageing from './Components/LabelingAndPackageing'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <About />
         <BrandingAndvisualIdentity />
         <MArketingAnddvertisement />
+        <LabelingAndPackageing />
       </AppContext>
     </div>
   )
