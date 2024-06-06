@@ -3,6 +3,7 @@ import { IoMdMenu } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 
 import { Context } from './ContextApi';
+import { Link } from 'react-router-dom';
 const Header = () => {
 
   const {menu, setMenu} = useContext(Context)
@@ -11,8 +12,8 @@ const Header = () => {
         <div className='flex items-center w-full mx-auto max-w-screen-lg  h-[12vh] justify-between font-mono'>
            <h1 className='text-2xl'>RS</h1>
             <div className='flex gap-5 items-center text-xl text-zinc-400'>
-                <span className='cursor-pointer hover:text-zinc-500 hidden sm:block'>Home</span>
-                <span className='cursor-pointer hover:text-zinc-500 hidden sm:block'>Contact Info</span>
+                <Link to={"/"} className='cursor-pointer hover:text-zinc-500 hidden sm:block'>Home</Link>
+                <Link to={"/contact"}  className='cursor-pointer hover:text-zinc-500 hidden sm:block'>Contact Info</Link>
                 <span onClick={()=>setMenu(!menu)} 
                 className='sm:hidden cursor-pointer text-3xl'>
                   {menu ? <RxCross1 /> : <IoMdMenu />}

@@ -1,30 +1,21 @@
 import React from 'react'
+import Main from './Components/Main'
 import Header from './Components/Header'
-import Home from './Components/Home'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Contact from './Contact'
 import { AppContext } from './Components/ContextApi'
-import About from './Components/About'
-import BrandingAndvisualIdentity from './Components/Branding&visualIdentity'
-import MArketingAnddvertisement from './Components/MArketing&Advertisement'
-import LabelingAndPackageing from './Components/LabelingAndPackageing'
-import Publication from './Components/Publication'
-import IllustarionAndInterface from './Components/IllustarionAndInterface'
-import VehicleAndSticker from './VehicleAndSticker'
 
 const App = () => {
   return (
-    <div>
-      <AppContext>
-        <Header />
-        <Home />
-        <About />
-        <BrandingAndvisualIdentity />
-        <MArketingAnddvertisement />
-        <LabelingAndPackageing />
-        <Publication />
-        <IllustarionAndInterface />
-        <VehicleAndSticker />
-      </AppContext>
-    </div>
+    <AppContext>
+    <BrowserRouter>
+    <Header />
+    <Routes>
+      <Route path='/' element={<Main />}/> 
+      <Route path='/contact' element={<Contact />}/> 
+    </Routes>
+    </BrowserRouter>
+    </AppContext>
   )
 }
 
