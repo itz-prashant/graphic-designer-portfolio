@@ -6,6 +6,7 @@ import About from './Components/About'
 import BrandingAndvisualIdentity from './Components/Branding&visualIdentity'
 import MArketingAnddvertisement from './Components/MArketing&Advertisement'
 import LabelingAndPackageing from './Components/LabelingAndPackageing'
+import Publication from './Components/Publication'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <BrandingAndvisualIdentity />
         <MArketingAnddvertisement />
         <LabelingAndPackageing />
+        <Publication />
       </AppContext>
     </div>
   )
