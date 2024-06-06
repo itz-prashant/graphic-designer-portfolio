@@ -20,7 +20,10 @@ import catalogue from '../assets/publication/catalogue.png'
 import menu1 from '../assets/publication/menu1.png'
 import menu2 from '../assets/publication/menu2.png'
 import stationary from '../assets/publication/stationary.png'
-
+import batik from '../assets/illustrator & UI/batikdesign.png'
+import ui from '../assets/illustrator & UI/ui.png'
+import wrap from '../assets/Vehicle wrap & sticker/vehicle wrap.png'
+import sticker from '../assets/Vehicle wrap & sticker/vehiclesticker.png'
 
 export const brandingAndVisualityData = [
     {img: bc1, name: "Budiness card"},
@@ -54,4 +57,14 @@ export const publication = [
     {img: menu2, name: "Menu"},
     {img: catalogue, name: "Catalogue"},
     {img: stationary, name: "Stationary"},
+]
+
+export const illustraionAndUserInterface = [
+    {img: batik, name: "Batik"},
+    {img: ui, name: "User-Inerface"},
+]
+
+export const vehicle = [
+    {img: wrap, name: "Vehicle Wrap"},
+    {img: sticker, name: "Vehicle Sticker"},
 ]
