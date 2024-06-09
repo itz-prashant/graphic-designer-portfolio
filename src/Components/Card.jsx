@@ -3,7 +3,7 @@ import React from 'react'
 const Card = ({item}) => {
   return (
     <div className='relative'>
-        <div className='relative cursor-zoom-in group'>
+        <div className='relative group'>
             <img className='group-hover:scale-105 transition-all duration-300' src={item.img} alt="" />
             <div className='absolute bg-black/50 bottom-0 left-0 right-0 p-3 font-mono text-white text-lg'>
                 {item.name}
