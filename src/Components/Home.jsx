@@ -1,17 +1,17 @@
 import React, { useContext } from 'react'
-import peep9 from '../assets/peep-9.svg'
+import peep9 from '../assets/peep-11.svg'
 import { Context } from './ContextApi'
 import { Link, useLocation } from 'react-router-dom'
 
 const Home = () => {
   const location = useLocation()
-    const {menu} = useContext(Context)
-
+    const {menu, setMenu} = useContext(Context)
+console.log(menu);
   return (
     <div className='w-full max-w-screen-lg mx-auto font-mono h-[80vh] px-5 lg:px-0 flex flex-col items-center justify-center relative'>
         {menu && <div className={`shadow absolute flex flex-col items-center ${menu ? "top-0" : "top-[-100vh]"} bg-white justify-center w-full sm:hidden h-full text-xl text-zinc-400 gap-4`}>
-        <Link to={"/"} className={`cursor-pointer hover:text-cyan-900 ${location.pathname == "/" ? "underline underline-offset-8" : ""}`}>Home</Link>
-        <Link to={"/contact"} className={`cursor-pointer hover:text-cyan-900 ${location.pathname == "/contact" ? "underline underline-offset-8" : ""}`}>Contact Info</Link>
+        <Link to={"/"} onClick={()=>setMenu(false)} className={`cursor-pointer hover:text-cyan-900 ${location.pathname == "/" ? "underline underline-offset-8" : ""}`}>Home</Link>
+        <Link to={"/contact"} onClick={()=>setMenu(false)} className={`cursor-pointer hover:text-cyan-900 ${location.pathname == "/contact" ? "underline underline-offset-8" : ""}`}>Contact Info</Link>
         </div>}
         <img src={peep9} alt="" />
         <div className='flex flex-col items-center -mt-9'>
